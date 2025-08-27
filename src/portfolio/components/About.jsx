@@ -86,8 +86,8 @@ const About = () => {
     {
       degree: 'Computer Science Engineering',
       institution: 'Nalanda Institute Of Technology, BBSR',
-      period: '2021-Present',
-      description: 'Currently pursuing graduation in Computer Science Engineering.'
+      period: '2021-2025',
+      description: 'Graduated with a degree in Computer Science Engineering.'
     },
     {
       degree: 'Science Intermediate',
