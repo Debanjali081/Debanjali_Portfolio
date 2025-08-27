@@ -141,14 +141,6 @@ export default function Services({ refs }) {
                   </motion.li>
                 ))}
               </ul>
-
-              {/* CTA button */}
-              <motion.button
-                whileHover={{ x: 5 }}
-                className={`flex items-center gap-2 text-sm font-medium ${service.color}`}
-              >
-                Learn more <FiArrowRight />
-              </motion.button>
             </motion.div>
           ))}
         </motion.div>
