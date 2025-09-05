@@ -74,12 +74,8 @@ const About = ({ refs }) => {
       title: 'Trainee Software Developer',
       company: 'Quotus Software Solution Pvt. Ltd.',
       period: 'April 2025 – Present',
-      description: 'Collaborating on backend development tasks, building REST APIs and microservices using Node.js and Express.js. Implementing secure authentication and authorization mechanisms using JWT and Passport.js.',
-      achievements: [
-        'Developed scalable RESTful APIs',
-        'Implemented JWT authentication',
-        'Optimized database queries'
-      ]
+      description: 'Collaborating on full-stack web applications and AI-powered solutions using the MERN stack and modern development practices.',
+      link: 'https://quotus.co.in/'
     }
   ];
 
@@ -209,23 +205,12 @@ const About = ({ refs }) => {
                     <h3 className="text-xl font-semibold">{exp.title}</h3>
                     <span className="text-purple-400 font-medium">{exp.period}</span>
                   </div>
-                  <p className="text-slate-400 font-medium mb-4">{exp.company}</p>
+                  <p className="text-slate-400 font-medium mb-4">
+                    <a href={exp.link} target="_blank" rel="noopener noreferrer" className="hover:text-purple-400 transition-colors">
+                      {exp.company}
+                    </a>
+                  </p>
                   <p className="text-slate-300 mb-4">{exp.description}</p>
-                  
-                  <h4 className="text-lg font-medium mb-3 text-slate-200">Key Contributions:</h4>
-                  <ul className="space-y-2">
-                    {exp.achievements.map((achievement, i) => (
-                      <motion.li 
-                        key={i}
-                        initial={{ opacity: 0, x: -10 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ delay: i * 0.1 + 0.3 }}
-                        className="flex items-start gap-2 text-slate-300"
-                      >
-                        <span className="text-purple-400 mt-1">•</span> {achievement}
-                      </motion.li>
-                    ))}
-                  </ul>
                 </motion.div>
               ))}
             </div>
