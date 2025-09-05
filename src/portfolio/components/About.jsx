@@ -1,8 +1,9 @@
 import React, { useState, useRef } from 'react';
+// eslint-disable-next-line no-unused-vars
 import { motion, useInView } from 'framer-motion';
 import { FiCode, FiCpu, FiDatabase, FiCloud, FiCrop, FiTrendingUp } from 'react-icons/fi';
 
-const About = () => {
+const About = ({ refs }) => {
   const [activeTab, setActiveTab] = useState('skills');
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
@@ -104,7 +105,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 px-6 sm:px-8 lg:px-12 bg-slate-900 text-white">
+    <section ref={refs.about} id="about" className="py-20 px-6 sm:px-8 lg:px-12 bg-slate-900 text-white">
       <div className="max-w-6xl mx-auto">
         <motion.div
           ref={ref}
