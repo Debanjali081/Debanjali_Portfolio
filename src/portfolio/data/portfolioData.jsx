@@ -5,13 +5,13 @@ export const projects = [
     title: "Naturopura - AgriTech Platform",
     desc: "AI crop health detection, MetaMask payments, real-time monitoring.",
     tags: ["React", "Node", "MongoDB", "Gemini API"],
-    link: "https://github.com/Debanjali081/Naturopura",
+    link: "https://app.naturopura.in/",
   },
   {
     title: "HireSense",
     desc: "Resume parsing + Gemini-generated interview Qs.",
     tags: ["TypeScript", "Vite", "Tailwind"],
-    link: "https://hire-sense-client-faxy-wheat.vercel.app/",
+    link: "https://debanjali-portfolio.onrender.com/",
   },
   {
     title: "CodeLens AI",
