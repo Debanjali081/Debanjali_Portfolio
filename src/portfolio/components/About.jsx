@@ -73,7 +73,7 @@ const About = ({ refs }) => {
     {
       title: 'Trainee Software Developer',
       company: 'Quotus Software Solution Pvt. Ltd.',
-      period: 'April 2025 – Present',
+      period: 'April 2025 – March 2026',
       description: 'Collaborating on full-stack web applications and AI-powered solutions using the MERN stack and modern development practices.',
       link: 'https://quotus.co.in/'
     }

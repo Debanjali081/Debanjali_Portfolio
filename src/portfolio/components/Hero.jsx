@@ -98,9 +98,9 @@ export default function Hero({ refs }) {
               <div className="w-full h-full rounded-full overflow-hidden border-4 border-slate-800 bg-slate-800">
                 {/* Your passport photo */}
                 <img 
-                  src="/passportphoto.jpg" 
+                  src="/portfolio_img.png" 
                   alt="Debanjali Lenka" 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full  object-cover object-top"
                   onError={(e) => {
                     e.target.style.display = 'none';
                     e.target.nextSibling.style.display = 'flex';
@@ -114,57 +114,6 @@ export default function Hero({ refs }) {
                 </div>
               </div>
             </div>
-            
-            {/* Drag instruction indicator */}
-            <motion.div 
-              className="absolute -top-2 -right-2 w-12 h-12 rounded-full bg-[var(--electric)] flex items-center justify-center text-black text-xs font-bold"
-              initial={{ scale: 1 }}
-              animate={{ 
-                scale: isDragging ? 1 : [1, 1.2, 1],
-                y: isDragging ? 0 : [0, -5, 0]
-              }}
-              transition={{ 
-                duration: 2, 
-                repeat: isDragging ? 0 : Infinity,
-                ease: "easeInOut"
-              }}
-            >
-              {isDragging ? "😄" : "👆"}
-            </motion.div>
-            
-            {/* Floating elements around the photo */}
-            <motion.div 
-              className="absolute -bottom-4 -left-4 w-16 h-16 rounded-full bg-[var(--purple)] flex items-center justify-center text-white text-xs font-bold"
-              animate={{ 
-                y: [0, 8, 0],
-                rotate: [0, -5, 5, 0]
-              }}
-              transition={{ 
-                duration: 5, 
-                repeat: Infinity,
-                ease: "easeInOut",
-                delay: 0.5
-              }}
-            >
-              AI
-            </motion.div>
-            
-            
-            <motion.div 
-              className="absolute top-1/2 -right-6 w-10 h-10 rounded-lg bg-[var(--cyan)] flex items-center justify-center text-black text-xs font-bold"
-              animate={{ 
-                x: [0, 5, 0],
-                rotate: [0, 5, -5, 0]
-              }}
-              transition={{ 
-                duration: 4, 
-                repeat: Infinity,
-                ease: "easeInOut",
-                delay: 1
-              }}
-            >
-              MERN
-            </motion.div>
           </motion.div>
         </div>
       </div>

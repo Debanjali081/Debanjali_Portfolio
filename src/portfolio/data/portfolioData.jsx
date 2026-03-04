@@ -13,12 +13,6 @@ export const projects = [
     tags: ["TypeScript", "Vite", "Tailwind"],
     link: "https://debanjali-portfolio.onrender.com/",
   },
-  {
-    title: "CodeLens AI",
-    desc: "AI code review platform with dark/light themes.",
-    tags: ["Node", "React", "OpenAI"],
-    link: "https://codelens-ai.onrender.com/",
-  },
 ];
 
 export const skills = [
